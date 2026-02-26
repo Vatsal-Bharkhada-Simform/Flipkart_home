@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: inherit;
 }
 
 html{
@@ -13,7 +12,7 @@ html{
 
 body{
     width: 100vw;
-    height: auto;
+    min-height: 100vh;
     overflow-x: hidden;
     font-family: Helvetica, Arial, sans-serif;
 }
