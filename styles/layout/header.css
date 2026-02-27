@@ -1,0 +1,103 @@
+.header{
+    width: 100%;
+    background-color: var(--color-primary);
+
+    .header__wrapper{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        padding: var(--padding-md);
+        justify-content: space-between;
+        vertical-align: middle;
+
+        .header__wrapper-left{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .header__icon-link{
+                padding: var(--padding-sm);
+                display: inline-block;
+                
+                svg{
+                    /* Fixed values as icon has unique dimensions */
+                    width: 7.6rem;
+                    aspect-ratio: 2.2/1;
+                }
+            }
+
+            .header__search{
+                display: inline-flex;
+                align-items: center;
+                background-color: var(--color-bg-white);
+                border-radius: var(--border-round-sm);
+                overflow: hidden;
+                
+                input{
+                    /* Fixed values to match reference layout dimensions */
+                    width: 24vw;
+                    min-width: 12rem;
+                    padding: var(--padding-lg) var(--padding-xl);
+                    background: transparent;
+                    border: none;
+                    flex: 1;
+                    outline: none;
+                }
+                
+                button{
+                    padding: var(--padding-md);
+                    background-color: inherit;
+                    border: none;
+                    
+                    svg{
+                        width: var(--svg-lg);
+                        aspect-ratio: 1/1;
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+
+        .header__wrapper-right{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .button-login{
+                text-decoration: none;
+                background-color: var(--color-bg-white);
+                color: var(--color-primary);
+                font-size: var(--font-xl);
+                font-weight: var(--font-bold);
+                padding: var(--padding-md) var(--padding-3xl);
+                white-space: nowrap;
+            }
+            
+            .button-icon{
+                display: inline-block;
+                text-decoration: none;
+                background-color: transparent;
+                border: none;
+                color: var(--color-bg-white);
+                font-size: var(--font-xl);
+                font-weight: var(--font-bold);
+                padding: var(--padding-md) var(--padding-2xl);
+                white-space: nowrap;
+
+                svg{
+                    width: var(--svg-lg);
+                    aspect-ratio: 1/1;
+                }
+
+                #chevron{
+                    width: var(--svg-md);
+                }
+
+                &:hover{
+                    background-color: var(--color-primary-dark);
+                }
+            }
+        }
+    }
+}
