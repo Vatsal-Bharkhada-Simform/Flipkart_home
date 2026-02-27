@@ -10,6 +10,36 @@
 <body>
     <header class="header">
         <div class="header__wrapper">
+            <div class="header__wrapper-left">
+                <a href="#" class="header__icon-link" aria-label="Go to home">
+                    <svg>
+                        <use href="./assets/icons/flipkart.svg"></use>
+                    </svg>
+                </a>
+                <form action="#" class="header__search">
+                    <input type="search" name="search" id="search" aria-label="Search for products, brands and more." placeholder="Search for products, brands and more">
+                    <button type="submit" aria-label="Submit search query">
+                        <svg>
+                            <use href="./assets/icons/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="header__wrapper-right">
+                <a href="#" class="button-login" aria-label="Login to flipkart">Login</a>
+                <button class="button-icon" aria-label="View more options" type="button">
+                    More
+                    <svg id="chevron">
+                        <use href="/assets/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                </button>
+                <a href="#" class="button-icon" aria-label="Go to Cart">
+                    <svg>
+                        <use href="./assets/icons/sprite.svg#cart"></use>
+                    </svg>
+                    Cart
+                </a>
+            </div>
         </div>
     </header>
     <nav class="categories">
