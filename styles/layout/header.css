@@ -3,7 +3,7 @@
     background-color: var(--color-primary);
 
     .header__wrapper{
-        width: 100%;
+        width: 100%;    /* Take up whole width for smaller screens. */
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
@@ -42,7 +42,6 @@
                     background: transparent;
                     border: none;
                     flex: 1;
-                    outline: none;
                 }
                 
                 button{
@@ -62,36 +61,21 @@
         .header__wrapper-right{
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: var(--gap-md);
 
             .button-login{
-                text-decoration: none;
                 background-color: var(--color-bg-white);
                 color: var(--color-primary);
-                font-size: var(--font-xl);
-                font-weight: var(--font-bold);
                 padding: var(--padding-md) var(--padding-3xl);
-                white-space: nowrap;
             }
             
             .button-icon{
-                display: inline-block;
-                text-decoration: none;
                 background-color: transparent;
-                border: none;
                 color: var(--color-bg-white);
-                font-size: var(--font-xl);
-                font-weight: var(--font-bold);
-                padding: var(--padding-md) var(--padding-2xl);
-                white-space: nowrap;
 
-                svg{
+                svg:not(.u-chevron-down){
                     width: var(--svg-lg);
                     aspect-ratio: 1/1;
-                }
-
-                #chevron{
-                    width: var(--svg-md);
                 }
 
                 &:hover{

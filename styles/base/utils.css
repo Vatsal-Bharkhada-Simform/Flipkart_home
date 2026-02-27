@@ -1,4 +1,13 @@
-.u-chevron-down{
+.u-chevron-down {
     width: var(--svg-sm);
     aspect-ratio: 1/1;
+}
+
+.u-button {
+    text-decoration: none;
+    border: none;
+    font-size: var(--font-xl);
+    font-weight: var(--font-bold);
+    padding: var(--padding-md) var(--padding-2xl);
+    white-space: nowrap;
 }
