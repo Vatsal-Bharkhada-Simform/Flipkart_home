@@ -5,6 +5,7 @@
 
 /* Layout styles */
 @import "./layout/header.css";
+@import "./layout/categories.css";
 
 /* Component styles */
 @import "./components/button.css";

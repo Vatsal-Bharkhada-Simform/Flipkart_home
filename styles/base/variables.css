@@ -27,7 +27,10 @@
     --border-round-sm: 2px;
     --border-round-md: 4px;
 
-    --svg-sm: 1.2rem;
+    --svg-sm: 1.4rem;
     --svg-md: 1.6rem;
     --svg-lg: 2rem;
+
+    --gap-sm: .6rem;
+    --gap-md: 1rem;
 }
