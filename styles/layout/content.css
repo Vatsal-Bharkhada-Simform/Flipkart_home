@@ -63,6 +63,7 @@
 
             .section__content{
                 position: relative;
+                padding-bottom: var(--padding-sm);
 
                 .section__content-list{
                     overflow-x: auto;
@@ -120,12 +121,16 @@
                     
                     &::-webkit-scrollbar{
                         width: 2px;
-                        height: 4px;
+                        height: 6px;
                     }
                     
                     &::-webkit-scrollbar-thumb{
-                        border-radius: 1rem;
-                        background-color: var(--color-text-grey);
+                        border-radius: 5rem;
+                        background-color: var(--color-text-grey-light);
+                    }
+
+                    &::-webkit-scrollbar-track{
+                        margin: 0 4px;
                     }
                 }
                 .scroll-button-right{
