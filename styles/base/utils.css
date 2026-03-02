@@ -10,4 +10,5 @@
     font-weight: var(--font-bold);
     padding: var(--padding-md) var(--padding-2xl);
     white-space: nowrap;
+    cursor: pointer;
 }

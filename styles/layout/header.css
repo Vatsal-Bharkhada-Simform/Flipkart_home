@@ -20,7 +20,7 @@
                 padding: var(--padding-sm);
                 display: inline-block;
                 
-                svg{
+                img{
                     /* Fixed values as icon has unique dimensions */
                     width: 7.6rem;
                     aspect-ratio: 2.2/1;
@@ -36,7 +36,7 @@
                 
                 input{
                     /* Fixed values to match reference layout dimensions */
-                    width: 24vw;
+                    width: 28vw;
                     min-width: 12rem;
                     padding: var(--padding-lg) var(--padding-xl);
                     background: transparent;
