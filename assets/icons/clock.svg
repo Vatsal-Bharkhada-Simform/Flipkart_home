@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 280.036 280.036" xml:space="preserve">
-<g>
-	<path style="fill:#EBEBEB;" d="M140.018,0c77.331,0,140.014,62.682,140.014,140.014S217.35,280.036,140.018,280.036
-		S0.004,217.345,0.004,140.014S62.687,0,140.018,0z"/>
-	<path style="fill:#324D5B;" d="M201.274,131.272h-52.505V69.998c0-4.839-3.92-8.751-8.751-8.751s-8.751,3.912-8.751,8.751v70.007
-		c0,4.839,3.92,8.751,8.751,8.751h61.256c4.839,0,8.751-3.912,8.751-8.751C210.025,135.192,206.113,131.272,201.274,131.272z"/>
-	<path style="fill:#E2574C;" d="M140.018,0C62.687,0,0.004,62.682,0.004,140.014s62.682,140.022,140.014,140.022
-		s140.014-62.691,140.014-140.022S217.349,0,140.018,0z M140.018,253.784c-62.726,0-113.761-51.035-113.761-113.77
-		c0-62.726,51.035-113.761,113.761-113.761s113.761,51.035,113.761,113.761C253.779,202.749,202.744,253.784,140.018,253.784z"/>
-</g>
-</svg>
+<svg viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>stopwatch</title> <desc>Created with Sketch.</desc> <g id="stopwatch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round"> <rect width="48" height="48" fill="white" fill-opacity="0.01"></rect> <g id="编组" transform="translate(7.000000, 3.000000)" stroke-width="4"> <circle id="Oval-3" stroke="#241f31" fill="#f6f5f4" fill-rule="nonzero" cx="17" cy="24" r="17"> </circle> <path d="M11,1 L23,1" id="Path-13" stroke="#241f31" stroke-linecap="round"> </path> <path d="M17,16 L17,24" id="Path-14" stroke="#241f31" stroke-linecap="round"> </path> <path d="M25,24 L17,24" id="Path-14" stroke="#241f31" stroke-linecap="round"> </path> <path d="M17,1 L17,5" id="Path-14" stroke="#241f31" stroke-linecap="round"> </path> </g> </g> </g></svg>
