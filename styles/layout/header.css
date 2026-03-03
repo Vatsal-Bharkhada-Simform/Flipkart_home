@@ -9,7 +9,6 @@
         display: flex;
         padding: var(--padding-md);
         justify-content: space-between;
-        vertical-align: middle;
 
         .header__wrapper-left{
             display: flex;

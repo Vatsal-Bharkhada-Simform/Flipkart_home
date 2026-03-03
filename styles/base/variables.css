@@ -1,5 +1,5 @@
 :root{
-    --color-primary: #2873f0;
+    --color-primary: #206bec;
     --color-primary-dark: #2162d3;
 
     --color-bg-white: #ffffff;
@@ -7,7 +7,7 @@
 
     --color-text-default: #111;
     --color-text-grey: #959595;
-    --color-text-green: #1a9b00;
+    --color-text-green: #137400;
 
     --font-sm: .8rem;
     --font-md: 1rem;
