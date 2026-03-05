@@ -3,28 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
     <title>Flipkart</title>
 
-    <link rel="stylesheet" href="styles/main.css">
+    <meta name="description" content="Shop form over 3 crore+ products. Get best deals and incredible offers on each purchase.">
+    <link rel="icon" href="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" type="image/x-icon">
+
+    <meta name="twitter:image" content="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png">
+    <meta name="twitter:site" content="@flipkart">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Shop on flipkart">
+    <meta name="twitter:description" content="Shop form over 3 crore+ products. Get best deals and incredible offers on each purchase.">
+    
+    <meta property="og:image" content="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png">
+    <meta property="og:image:alt" content="Shop form over 3 crore+ products. Get best deals and incredible offers on each purchase.">
+    <meta property="og:site_name" content="Flipkart">
+    <meta property="og:type" content="Home">
+    <meta property="og:title" content="Shop on flipkart">
+    <meta property="og:url" content="https://flipkart.com">
+    <meta property="og:description" content="Shop form over 3 crore+ products. Get best deals and incredible offers on each purchase.">
+    
+    <meta name="hostname" content="flipkart.com">
+    <meta name="keyboard-shortcuts-preference" content="all">
+    <meta name="hovercards-preference" content="true">
+    <meta name="announcement-preference-hovercard" content="true">
+    <meta name="expected-hostname" content="flipkart.com">
 </head>
 <body>
     <header class="header">
         <div class="header__wrapper">
-            <div class="header__wrapper-left"></div>
-            <div class="header__wrapper-right"></div>
+            <div class="header__wrapper-left">
+                <a href="#" class="header__icon-link" aria-label="Go to home">
+                    <img src="./assets/icons/flipkart.svg" alt="Flipkart logo">
+                </a>
+                <form action="#" class="header__search">
+                    <input type="search" name="search" id="search" aria-label="Search for products, brands and more." placeholder="Search for products, brands and more">
+                    <button type="submit" aria-label="Submit search query">
+                        <svg>
+                            <use href="./assets/icons/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="header__wrapper-right">
+                <a href="#" class="u-button button-login" aria-label="Login to flipkart">
+                    Login
+                </a>
+                <button class="u-button button-icon" aria-label="View more options" type="button" aria-haspopup="true" aria-expanded="false">
+                    More
+                    <svg class="u-chevron-down">
+                        <use href="./assets/icons/sprite.svg#chevron-down"></use>
+                    </svg>
+                </button>
+                <a href="#" class="u-button button-icon" aria-label="Go to Cart">
+                    <svg>
+                        <use href="./assets/icons/sprite.svg#cart"></use>
+                    </svg>
+                    Cart
+                </a>
+            </div>
         </div>
     </header>
-    <nav class="categories">
+    <nav class="categories" aria-label="Product categories">
         <ul class="categories__list">
-            <li class="categories__list-item"></li>
-            <li class="categories__list-item"></li>
-            <li class="categories__list-item"></li>
-            <li class="categories__list-item"></li>
-            <li class="categories__list-item"></li>
-            <li class="categories__list-item"></li>
-            <li class="categories__list-item"></li>
-            <li class="categories__list-item"></li>
-            <li class="categories__list-item"></li>
+            <li class="categories__list-item">
+                <a href="#" class="list__item-link">
+                    <img src="./assets/images/categories/offers.webp" alt="">
+                    <span class="item-name">
+                        Top Offers
+                    </span>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="list__item-link">
+                    <img src="./assets/images/categories/grocery.webp" alt="">
+                    <span class="item-name">
+                        Grocery
+                    </span>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="list__item-link">
+                    <img src="./assets/images/categories/mobiles.webp" alt="">
+                    <span class="item-name">
+                        Mobiles
+                    </span>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="list__item-link">
+                    <img src="./assets/images/categories/fashion.webp" alt="">
+                    <span class="item-name">
+                        Fashion
+                        <svg class="u-chevron-down">
+                            <use href="./assets/icons/sprite.svg#chevron-down"></use>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="list__item-link">
+                    <img src="./assets/images/categories/electronics.webp" alt="">
+                    <span class="item-name">
+                        Electronics
+                        <svg class="u-chevron-down">
+                            <use href="./assets/icons/sprite.svg#chevron-down"></use>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="list__item-link">
+                    <img src="./assets/images/categories/home.webp" alt="">
+                    <span class="item-name">
+                        Home
+                        <svg class="u-chevron-down">
+                            <use href="./assets/icons/sprite.svg#chevron-down"></use>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="list__item-link">
+                    <img src="./assets/images/categories/appliances.webp" alt="">
+                    <span class="item-name">
+                        Appliances
+                        <svg class="u-chevron-down">
+                            <use href="./assets/icons/sprite.svg#chevron-down"></use>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="list__item-link">
+                    <img src="./assets/images/categories/travel.webp" alt="">
+                    <span class="item-name">
+                        Travel
+                    </span>
+                </a>
+            </li>
+            <li class="categories__list-item">
+                <a href="#" class="list__item-link">
+                    <img src="./assets/images/categories/toys.webp" alt="">
+                    <span class="item-name">
+                        Beauty, Toys & More
+                        <svg class="u-chevron-down">
+                            <use href="./assets/icons/sprite.svg#chevron-down"></use>
+                        </svg>
+                    </span>
+                </a>
+            </li>
         </ul>
     </nav>
     <main class="main__content">

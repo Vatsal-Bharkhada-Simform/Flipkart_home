@@ -1,10 +1,36 @@
 :root{
-    --color-primary: #2873f0;
+    --color-primary: #206bec;
+    --color-primary-dark: #2162d3;
 
     --color-bg-white: #ffffff;
     --color-bg-grey:#f2f3f7;
 
     --color-text-default: #111;
     --color-text-grey: #959595;
-    --color-text-green: #1a9b00;
+    --color-text-green: #137400;
+
+    --font-sm: .8rem;
+    --font-md: 1rem;
+    --font-lg: 1.2rem;
+    --font-xl: 1.4rem;
+
+    --font-bold: 600;
+    --font-light: 300;
+
+    --padding-sm: .4rem;
+    --padding-md: .8rem;
+    --padding-lg: 1rem;
+    --padding-xl: 1.6rem;
+    --padding-2xl: 2.4rem;
+    --padding-3xl: 3.6rem;
+
+    --border-round-sm: 2px;
+    --border-round-md: 4px;
+
+    --svg-sm: 1.4rem;
+    --svg-md: 1.6rem;
+    --svg-lg: 2rem;
+
+    --gap-sm: .6rem;
+    --gap-md: 1rem;
 }

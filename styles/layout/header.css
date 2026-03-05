@@ -1,0 +1,86 @@
+.header{
+    width: 100%;
+    background-color: var(--color-primary);
+
+    .header__wrapper{
+        width: 100%;    /* Take up whole width for smaller screens. */
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        padding: var(--padding-md);
+        justify-content: space-between;
+
+        .header__wrapper-left{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .header__icon-link{
+                padding: var(--padding-sm);
+                display: inline-block;
+                
+                img{
+                    /* Fixed values as icon has unique dimensions */
+                    width: 7.6rem;
+                    aspect-ratio: 2.2/1;
+                }
+            }
+
+            .header__search{
+                display: inline-flex;
+                align-items: center;
+                background-color: var(--color-bg-white);
+                border-radius: var(--border-round-sm);
+                overflow: hidden;
+                
+                input{
+                    /* Fixed values to match reference layout dimensions */
+                    width: 28vw;
+                    min-width: 12rem;
+                    padding: var(--padding-lg) var(--padding-xl);
+                    background: transparent;
+                    border: none;
+                    flex: 1;
+                }
+                
+                button{
+                    padding: var(--padding-md);
+                    background-color: inherit;
+                    border: none;
+                    
+                    svg{
+                        width: var(--svg-lg);
+                        aspect-ratio: 1/1;
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+
+        .header__wrapper-right{
+            display: flex;
+            align-items: center;
+            gap: var(--gap-md);
+
+            .button-login{
+                background-color: var(--color-bg-white);
+                color: var(--color-primary);
+                padding: var(--padding-md) var(--padding-3xl);
+            }
+            
+            .button-icon{
+                background-color: transparent;
+                color: var(--color-bg-white);
+
+                svg:not(.u-chevron-down){
+                    width: var(--svg-lg);
+                    aspect-ratio: 1/1;
+                }
+
+                &:hover{
+                    background-color: var(--color-primary-dark);
+                }
+            }
+        }
+    }
+}
