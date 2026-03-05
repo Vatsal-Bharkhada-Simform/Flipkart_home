@@ -155,6 +155,7 @@
         
         .advertisement{
             box-shadow: var(--shadow-sm);
+            cursor: pointer;
 
             img{
                 width: 100%;
