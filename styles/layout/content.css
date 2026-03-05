@@ -93,6 +93,7 @@
                             .item-image{
                                 mix-blend-mode: multiply;
                                 width: 100%;
+                                min-width: 10rem;
                                 height: auto;
                             }
 
