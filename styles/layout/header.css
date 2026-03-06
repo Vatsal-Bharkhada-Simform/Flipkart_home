@@ -46,7 +46,7 @@
             }
 
 
-            @media (max-width: 768px){
+            @media (max-width: 425px){
                 .header__search{
                     display: none;
                 }
@@ -168,10 +168,6 @@
             
             @media (max-width: 768px){
 
-                .search__wrapper{
-                    display: block;
-                }
-
                 .button-login{
                     padding: var(--padding-md) var(--padding-xl);
                 }
@@ -188,6 +184,12 @@
 
                 .hamburger{
                     display: inline-block;
+                }
+            }
+
+            @media (max-width: 425px){
+                .search__wrapper{
+                    display: block;
                 }
             }
         }
