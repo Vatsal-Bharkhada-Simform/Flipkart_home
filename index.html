@@ -38,7 +38,7 @@
                 </a>
                 <form action="#" class="header__search">
                     <input type="search" name="search" id="search" aria-label="Search for products, brands and more." placeholder="Search for products, brands and more">
-                    <button type="submit" aria-label="Submit search query">
+                    <button class="u-search-button" type="submit" aria-label="Submit search query">
                         <svg>
                             <use href="./assets/icons/sprite.svg#search"></use>
                         </svg>
@@ -46,6 +46,30 @@
                 </form>
             </div>
             <div class="header__wrapper-right">
+
+                <!-- Only visible in mobiles and tablets -->
+                <div class="search__wrapper">
+                    <input type="checkbox" id="search__switch" aria-hidden="true">
+                    <button class="u-search-button" type="submit" aria-label="Submit search query">
+                        <label for="search__switch">
+                            <svg>
+                                <use href="./assets/icons/sprite.svg#search"></use>
+                            </svg>
+                        </label>
+                    </button>
+                    <div class="search__container">
+                        <form action="#" class="header__search">
+                            <input type="search" name="search" id="search" aria-label="Search for products, brands and more." placeholder="Search for products, brands and more">
+                            <button class="u-search-button" type="submit" aria-label="Submit search query">
+                                <svg>
+                                    <use href="./assets/icons/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- ----------------------------------- -->
+
                 <a href="#" class="u-button button-login" aria-label="Login to flipkart">
                     Login
                 </a>
@@ -61,6 +85,34 @@
                     </svg>
                     Cart
                 </a>
+
+                <!-- Only shown in mobiles and tablets -->
+                <div class="hamburger">
+                    <input type="checkbox" id="hamburger__switch" aria-hidden="true">
+                    <button type="button" title="Menu" aria-label="Open menu" class="label-wrapper u-button">
+                        <label class="hamburger__label" for="hamburger__switch">
+                            <svg class="u-svg-md">
+                                <use href="./assets/icons/sprite.svg#menu"></use>
+                            </svg>
+                        </label>
+                    </button>
+                    <div class="menu__items">
+                        <a href="#" class="u-button button-icon" aria-label="Go to Cart">
+                            <svg>
+                                <use href="./assets/icons/sprite.svg#cart"></use>
+                            </svg>
+                            Cart
+                        </a>
+                        <div class="separator"></div>
+                        <button class="u-button button-icon" aria-label="View more options" type="button" aria-haspopup="true" aria-expanded="false">
+                            More
+                            <svg class="u-svg-md">
+                                <use href="./assets/icons/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- --------------------------------- -->
             </div>
         </div>
     </header>

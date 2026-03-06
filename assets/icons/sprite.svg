@@ -11,11 +11,11 @@
     <symbol id="chevron-right" viewBox="0 0 24 24" fill="transparent">
         <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
-    <symbol id="" viewBox="0 0 16 16" fill="currentColor">
-        
+    <symbol id="menu" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
-    <symbol id="" viewBox="0 0 16 16" fill="currentColor">
-        
+    <symbol id="arrow-right" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     <symbol id="" viewBox="0 0 16 16" fill="currentColor">
         

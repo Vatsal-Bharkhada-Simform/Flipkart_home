@@ -8,7 +8,7 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        overflow-x: auto;
         padding: var(--padding-md) 0;
 
         .categories__list-item{
@@ -31,7 +31,7 @@
                 gap: var(--gap-sm); 
 
                 img{
-                    max-width: 10rem;
+                    width: clamp(5rem, 5vw, 10rem);
                     aspect-ratio: 1/1;
                     mix-blend-mode: multiply;
                 }

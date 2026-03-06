@@ -7,8 +7,27 @@
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
+        position: relative;
         padding: var(--padding-md);
         justify-content: space-between;
+
+        .header__search{
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--color-bg-white);
+            border-radius: var(--border-round-sm);
+            overflow: hidden;
+            
+            input{
+                /* Fixed values to match reference layout dimensions */
+                width: 28vw;
+                min-width: 12rem;
+                padding: var(--padding-lg) var(--padding-xl);
+                background: transparent;
+                border: none;
+                flex: 1;
+            }
+        }
 
         .header__wrapper-left{
             display: flex;
@@ -21,38 +40,15 @@
                 
                 img{
                     /* Fixed values as icon has unique dimensions */
-                    width: 7.6rem;
+                    width: clamp(6rem, 5vw, 7.6rem);
                     aspect-ratio: 2.2/1;
                 }
             }
 
-            .header__search{
-                display: inline-flex;
-                align-items: center;
-                background-color: var(--color-bg-white);
-                border-radius: var(--border-round-sm);
-                overflow: hidden;
-                
-                input{
-                    /* Fixed values to match reference layout dimensions */
-                    width: 28vw;
-                    min-width: 12rem;
-                    padding: var(--padding-lg) var(--padding-xl);
-                    background: transparent;
-                    border: none;
-                    flex: 1;
-                }
-                
-                button{
-                    padding: var(--padding-md);
-                    background-color: inherit;
-                    border: none;
-                    
-                    svg{
-                        width: var(--svg-lg);
-                        aspect-ratio: 1/1;
-                        color: var(--color-primary);
-                    }
+
+            @media (max-width: 768px){
+                .header__search{
+                    display: none;
                 }
             }
         }
@@ -61,6 +57,38 @@
             display: flex;
             align-items: center;
             gap: var(--gap-md);
+
+            .search__wrapper{
+                display: none;
+
+                .search__container{
+                    display: none;
+                    background-color: var(--color-primary);
+                    padding: var(--padding-md);
+
+                    .header__search{
+                        width: 100%;
+                    }
+                }
+
+                > button{
+                    background-color: var(--color-bg-white);
+                    border-radius: var(--border-round-sm);
+                }
+
+                #search__switch{
+                    display: none;
+                }
+
+                #search__switch:checked ~ .search__container{
+                    display: block;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100vw;
+                    z-index: 2;
+                }
+            }
 
             .button-login{
                 background-color: var(--color-bg-white);
@@ -79,6 +107,87 @@
 
                 &:hover{
                     background-color: var(--color-primary-dark);
+                }
+            }
+
+            /* Hamburger menu(Hidden for all viewports > 768px) */
+            .hamburger{
+                display: none;
+                position: relative;
+
+                .label-wrapper{
+                    padding: var(--padding-md);
+                    border-radius: var(--border-round-sm);
+                    background-color: var(--color-bg-white);
+
+                    .hamburger__label{
+                        cursor: pointer;
+                    }
+
+                    svg{
+                        width: var(--svg-lg);
+                        aspect-ratio: 1/1;
+                    }
+                }
+
+                #hamburger__switch{
+                    display: none; /* Hide input checkbox from view. */
+                }
+
+                .menu__items{
+                    display: none;
+                    flex-direction: column;
+                    padding: var(--padding-md);
+                    background-color: var(--color-bg-white);
+                    box-shadow: var(--shadow-md);
+
+                    .button-icon, .button-login{
+                        color: var(--color-primary);
+
+                        &:hover{
+                            background-color: var(--color-bg-grey-hover);
+                        }
+                    }
+
+                    .separator{
+                        height: 1px;
+                        background-color: var(--color-bg-grey-hover);
+                        margin: var(--padding-sm) 0;
+                    }
+                }
+
+                /* View menu items when hamburger is checked */
+                #hamburger__switch:checked ~ .menu__items{
+                    display: flex;
+                    position: absolute;
+                    top: calc(100% + var(--gap-sm));
+                    right: 0;
+                    z-index: 1;
+                }
+            }
+            
+            @media (max-width: 768px){
+
+                .search__wrapper{
+                    display: block;
+                }
+
+                .button-login{
+                    padding: var(--padding-md) var(--padding-xl);
+                }
+
+                /* Hide buttons in mobile/tablet viewport */
+                .button-icon{
+                    display: none;
+                }
+
+                /* Render hamburger and dropdown menu */
+                .menu__items > .button-icon{
+                    display: block;
+                }
+
+                .hamburger{
+                    display: inline-block;
                 }
             }
         }
