@@ -64,7 +64,7 @@
 
             .button-login{
                 background-color: var(--color-bg-white);
-                color: var(--color-primary);
+                color: var(--color-primary-dark);
                 padding: var(--padding-md) var(--padding-3xl);
             }
             

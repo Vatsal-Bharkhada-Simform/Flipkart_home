@@ -8,8 +8,8 @@
     <symbol id="chevron-down" viewBox="0 0 24 24" fill="transparent">
         <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
-    <symbol id="" viewBox="0 0 16 16" fill="currentColor">
-        
+    <symbol id="chevron-right" viewBox="0 0 24 24" fill="transparent">
+        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     <symbol id="" viewBox="0 0 16 16" fill="currentColor">
         

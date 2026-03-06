@@ -6,16 +6,23 @@
     --color-bg-grey:#f2f3f7;
 
     --color-text-default: #111;
-    --color-text-grey: #959595;
+    --color-text-grey: #727272;
+    --color-text-grey-light: #9c9c9c;
     --color-text-green: #137400;
+    --color-text-white: #fff;
+
+    --color-border-grey: #e4e4e4;
 
     --font-sm: .8rem;
     --font-md: 1rem;
     --font-lg: 1.2rem;
     --font-xl: 1.4rem;
+    --font-2xl: 1.6rem;
+    --font-h2: 2.2rem;
 
-    --font-bold: 600;
     --font-light: 300;
+    --font-regular: 500;
+    --font-bold: 600;
 
     --padding-sm: .4rem;
     --padding-md: .8rem;
@@ -30,7 +37,12 @@
     --svg-sm: 1.4rem;
     --svg-md: 1.6rem;
     --svg-lg: 2rem;
+    --svg-xl: 2.8rem;
+    --svg-4xl: 4rem;
 
     --gap-sm: .6rem;
     --gap-md: 1rem;
+
+    --shadow-sm: 0 2px 4px 0px #ccc;
+    --shadow-md: 0 0 12px -4px var(--color-text-grey);
 }
