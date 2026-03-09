@@ -113,7 +113,7 @@
                     aspect-ratio: 1/1;
                 }
 
-                &:hover{
+                &:hover, &:focus-visible{
                     background-color: var(--color-primary-dark);
                 }
             }

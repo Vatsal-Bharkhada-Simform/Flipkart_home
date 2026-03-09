@@ -54,7 +54,7 @@
                         color: var(--color-text-white);
                         background-color: var(--color-primary);
                         
-                        &:hover{
+                        &:hover, &:focus-visible{
                             background-color: var(--color-primary-dark);
                         }
                     }
@@ -86,7 +86,7 @@
                             color: var(--color-text-default);
                             border-radius: var(--border-round-md);
 
-                            &:hover{
+                            &:hover, &:focus-visible{
                                 background-color: var(--color-bg-grey);
                             }
 
