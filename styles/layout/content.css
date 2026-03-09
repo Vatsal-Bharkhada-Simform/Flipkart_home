@@ -54,7 +54,7 @@
                         color: var(--color-text-white);
                         background-color: var(--color-primary);
                         
-                        &:hover{
+                        &:hover, &:focus-visible{
                             background-color: var(--color-primary-dark);
                         }
                     }
@@ -86,7 +86,7 @@
                             color: var(--color-text-default);
                             border-radius: var(--border-round-md);
 
-                            &:hover{
+                            &:hover, &:focus-visible{
                                 background-color: var(--color-bg-grey);
                             }
 
@@ -160,6 +160,69 @@
             img{
                 width: 100%;
                 height: auto;
+            }
+        }
+
+        @media (max-width: 768px){
+
+            .section__wrapper{
+                .section__head{
+                    padding: var(--padding-lg);
+
+                    .section__head-left{
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: var(--gap-sm);
+
+                        h2{
+                            font-size: var(--font-2xl);
+                        }
+
+                        .deals-timer {
+                            img{
+                                width: var(--svg-md);
+                            }
+                            
+                            time{
+                                font-size: var(--font-lg);
+                            }
+                        }
+                    }
+
+                    .section__head-right{
+                        button{
+                            font-size: var(--font-md);
+                            padding: var(--padding-md) var(--padding-lg);
+                        }
+                    }
+                }
+
+                .section__content{
+                    .section__content-list{
+                        .list-item{
+                            min-width: 12rem;
+
+                            .list-item--link{
+                                .item-name, .item-offer, .item-about{
+                                    font-size: var(--font-lg);
+                                }
+                            }
+                        }
+                    }
+
+                    .scroll-button-right{
+                        width: 3rem;
+                        height: 5rem;
+
+                        svg{
+                            width: var(--svg-xl);
+                        }
+                    }
+                }
+            }
+
+            .advertisement{
+                display: none;
             }
         }
     }

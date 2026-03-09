@@ -6,22 +6,22 @@
     <link rel="stylesheet" href="styles/main.css">
     <title>Flipkart</title>
 
-    <meta name="description" content="Shop form over 3 crore+ products. Get best deals and incredible offers on each purchase.">
+    <meta name="description" content="Shop from over 3 crore+ products. Get best deals and incredible offers on each purchase.">
     <link rel="icon" href="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" type="image/x-icon">
 
     <meta name="twitter:image" content="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png">
     <meta name="twitter:site" content="@flipkart">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Shop on flipkart">
-    <meta name="twitter:description" content="Shop form over 3 crore+ products. Get best deals and incredible offers on each purchase.">
+    <meta name="twitter:description" content="Shop from over 3 crore+ products. Get best deals and incredible offers on each purchase.">
     
     <meta property="og:image" content="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png">
-    <meta property="og:image:alt" content="Shop form over 3 crore+ products. Get best deals and incredible offers on each purchase.">
+    <meta property="og:image:alt" content="Shop from over 3 crore+ products. Get best deals and incredible offers on each purchase.">
     <meta property="og:site_name" content="Flipkart">
     <meta property="og:type" content="Home">
     <meta property="og:title" content="Shop on flipkart">
     <meta property="og:url" content="https://flipkart.com">
-    <meta property="og:description" content="Shop form over 3 crore+ products. Get best deals and incredible offers on each purchase.">
+    <meta property="og:description" content="Shop from over 3 crore+ products. Get best deals and incredible offers on each purchase.">
     
     <meta name="hostname" content="flipkart.com">
     <meta name="keyboard-shortcuts-preference" content="all">
@@ -38,7 +38,7 @@
                 </a>
                 <form action="#" class="header__search">
                     <input type="search" name="search" id="search" aria-label="Search for products, brands and more." placeholder="Search for products, brands and more">
-                    <button type="submit" aria-label="Submit search query">
+                    <button class="u-search-button" type="submit" aria-label="Submit search query">
                         <svg>
                             <use href="./assets/icons/sprite.svg#search"></use>
                         </svg>
@@ -46,6 +46,29 @@
                 </form>
             </div>
             <div class="header__wrapper-right">
+
+                <!-- Only visible in mobiles and tablets -->
+                <div class="search__wrapper">
+                    <input type="checkbox" id="search__switch" aria-hidden="true">
+                    <label for="search__switch">
+                        <span class="u-search-button">
+                            <svg>
+                                <use href="./assets/icons/sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <div class="search__container">
+                        <form action="#" class="header__search">
+                            <input type="search" name="search" id="search_mobile" aria-label="Search for products, brands and more." placeholder="Search for products, brands and more">
+                            <button class="u-search-button" type="submit" aria-label="Submit search query">
+                                <svg>
+                                    <use href="./assets/icons/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
                 <a href="#" class="u-button button-login" aria-label="Login to flipkart">
                     Login
                 </a>
@@ -61,6 +84,33 @@
                     </svg>
                     Cart
                 </a>
+
+                <!-- Only shown in mobiles and tablets -->
+                <div class="hamburger">
+                    <input type="checkbox" id="hamburger__switch" aria-hidden="true">
+                    <label class="hamburger__label" for="hamburger__switch">
+                        <span title="Menu" class="label-button u-button">
+                            <svg class="u-svg-md">
+                                <use href="./assets/icons/sprite.svg#menu"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <div class="menu__items">
+                        <a href="#" class="u-button button-icon" aria-label="Go to Cart">
+                            <svg>
+                                <use href="./assets/icons/sprite.svg#cart"></use>
+                            </svg>
+                            Cart
+                        </a>
+                        <div class="separator"></div>
+                        <button class="u-button button-icon" aria-label="View more options" type="button" aria-haspopup="true" aria-expanded="false">
+                            More
+                            <svg class="u-svg-md">
+                                <use href="./assets/icons/sprite.svg#chevron-down"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>

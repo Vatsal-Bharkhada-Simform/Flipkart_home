@@ -3,6 +3,11 @@
     aspect-ratio: 1/1;
 }
 
+.u-svg-md {
+    width: var(--svg-md);
+    aspect-ratio: 1/1;
+}
+
 .u-button {
     text-decoration: none;
     border: none;
@@ -11,4 +16,16 @@
     padding: var(--padding-md) var(--padding-2xl);
     white-space: nowrap;
     cursor: pointer;
+}
+
+.u-search-button {
+    padding: var(--padding-md);
+    background-color: inherit;
+    border: none;
+
+    svg {
+        width: var(--svg-lg);
+        aspect-ratio: 1/1;
+        color: var(--color-primary);
+    }
 }
