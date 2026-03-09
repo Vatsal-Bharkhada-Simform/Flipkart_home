@@ -50,16 +50,16 @@
                 <!-- Only visible in mobiles and tablets -->
                 <div class="search__wrapper">
                     <input type="checkbox" id="search__switch" aria-hidden="true">
-                    <button class="u-search-button" type="submit" aria-label="Submit search query">
-                        <label for="search__switch">
+                    <label for="search__switch">
+                        <span class="u-search-button">
                             <svg>
                                 <use href="./assets/icons/sprite.svg#search"></use>
                             </svg>
-                        </label>
-                    </button>
+                        </span>
+                    </label>
                     <div class="search__container">
                         <form action="#" class="header__search">
-                            <input type="search" name="search" id="search" aria-label="Search for products, brands and more." placeholder="Search for products, brands and more">
+                            <input type="search" name="search" id="search_mobile" aria-label="Search for products, brands and more." placeholder="Search for products, brands and more">
                             <button class="u-search-button" type="submit" aria-label="Submit search query">
                                 <svg>
                                     <use href="./assets/icons/sprite.svg#search"></use>
@@ -68,7 +68,6 @@
                         </form>
                     </div>
                 </div>
-                <!-- ----------------------------------- -->
 
                 <a href="#" class="u-button button-login" aria-label="Login to flipkart">
                     Login
@@ -89,13 +88,13 @@
                 <!-- Only shown in mobiles and tablets -->
                 <div class="hamburger">
                     <input type="checkbox" id="hamburger__switch" aria-hidden="true">
-                    <button type="button" title="Menu" aria-label="Open menu" class="label-wrapper u-button">
-                        <label class="hamburger__label" for="hamburger__switch">
+                    <label class="hamburger__label" for="hamburger__switch">
+                        <span title="Menu" class="label-button u-button">
                             <svg class="u-svg-md">
                                 <use href="./assets/icons/sprite.svg#menu"></use>
                             </svg>
-                        </label>
-                    </button>
+                        </span>
+                    </label>
                     <div class="menu__items">
                         <a href="#" class="u-button button-icon" aria-label="Go to Cart">
                             <svg>
@@ -112,7 +111,6 @@
                         </button>
                     </div>
                 </div>
-                <!-- --------------------------------- -->
             </div>
         </div>
     </header>

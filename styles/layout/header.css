@@ -71,9 +71,17 @@
                     }
                 }
 
-                > button{
-                    background-color: var(--color-bg-white);
-                    border-radius: var(--border-round-sm);
+                label {
+                    display: inline-block;
+                    cursor: pointer;
+                    
+                    > span{
+                        display: inline-block;
+                        padding: var(--padding-md-mobile);
+                        background-color: var(--color-bg-white);
+                        border-radius: var(--border-round-sm);
+                        pointer-events: none;
+                    }
                 }
 
                 #search__switch{
@@ -86,7 +94,7 @@
                     top: 100%;
                     left: 0;
                     width: 100vw;
-                    z-index: 2;
+                    z-index: 1;
                 }
             }
 
@@ -115,12 +123,16 @@
                 display: none;
                 position: relative;
 
-                .label-wrapper{
-                    padding: var(--padding-md);
-                    border-radius: var(--border-round-sm);
-                    background-color: var(--color-bg-white);
+                .hamburger__label{
+                    display: inline-block;
+                    cursor: pointer;
 
-                    .hamburger__label{
+                    .label-button{
+                        display: inline-block;
+                        padding: var(--padding-md-mobile);
+                        border-radius: var(--border-round-sm);
+                        background-color: var(--color-bg-white);
+                        pointer-events: none;
                         cursor: pointer;
                     }
 
